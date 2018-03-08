@@ -1,10 +1,10 @@
-// Array is a data structure used to store elements of one type at contiguous locations
-// Size is required before storing data
+Notes on Array
 
-/*
-Let size of array be n.
+Array is a data structure used to store elements of one type at contiguous locations
+Size is required before storing data
 
 Task            Big-O     Reasoning
+------------------------------------------------------------------------------------------------------------------------------------
 
 Accessing Time: O(1)      [This is possible because elements are stored at contiguous locations]
 
@@ -15,3 +15,20 @@ Search Time:    O(n)      for Sequential Search
 Insertion Time: O(n)      [The worst case occurs when insertion happens at the beginning of array and requires shifting all elements]
 
 Deletion Time:  O(n)      [The worst case occurs when deletion happens at the beginning of an array and requires shifting all elements]
+
+
+**Example**
+
+Memory Location         200         201         202         203         ...
+
+Values                  U           B           F           D           ...
+
+Index                   0           1           2           3           ...
+
+**PROS**
+
+* Random Access of elements
+
+* Better Cache locality 
+
+
