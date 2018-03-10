@@ -4,7 +4,7 @@
 int search(int arr[], int n, int ele)
 {
   int i;  //Counter
-  for (i=0; i<n, i++)
+  for (i=0; i<n; i++)
   {
     if(arr[i] == ele)
       return i;
