@@ -1,6 +1,6 @@
 #include <iostream>
 #include <vector>
-#include <unordered_map>
+#include <unordered_set>
 
 using namespace std;
 
@@ -8,13 +8,10 @@ using namespace std;
 // Remove the copies
  
 vector<int> formatNum(vector<int> numVec) {
-    unordered_map<int, int> numMap;
+    unordered_set<int> temp(numVec.begin(), numVec.end());  //creates a unordered_set w/ size of numVec
+    numVec.assign(temp.begin(), temp.end());                //assigns values from numVec to temp set
     
-    //add numbers to hashmap?
-    for(<vector>iterator it=numVec.begin(), it<numVec.end(), it++){
-        numMap.insert(*it);
-        cout << *it << endl;
-    }
+    
     
     return numVec;
 }
@@ -26,5 +23,3 @@ int main() {
     
     return 0;
 }
-
-
